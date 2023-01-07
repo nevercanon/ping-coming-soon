@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    width: 18%;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+p {
+    color: hsl(209, 33%, 12%);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type="email"] {
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 0.5rem 2rem;
+    border-radius: 45px;
+    margin-bottom: 0.75rem;
+}
+
+input[type="email"]::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-size: 0.85rem;
+}
+
+input[type="email"].error {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+.error-message {
+    margin: -0.5rem auto 1.5rem;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+button {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    border: none;
+    padding: 0.675rem 2rem;
+    border-radius: 45px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 10px 9px hsla(223, 87%, 63%, 0.2);
+    margin-bottom: 5rem;
+    transition: all 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.illustration {
+    margin-bottom: 8rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.social {
+    margin-bottom: 1.5rem;
+}
+
+i {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsla(223, 100%, 88%, 0.5);
+    width: 29px;
+    height: 29px;
+    padding: 0.35rem;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    transition: all 0.3s;
+}
+
+i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+.facebook {
+    padding: 0.3rem 0.57rem;
+}
+
+.instagram {
+    padding: 0.35rem 0.3rem 0.35rem 0.4rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 59%);
+}
+
+
+@media screen and (min-width: 50em) {
+    body {
+        padding: 2.5rem 15rem;
+    }
+   .logo {
+    width: 7%;
+   }
+
+   h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+   }
+
+   p {
+    font-size: 1.25rem;
+   }
+
+   form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    
+   }
+
+   .error-div {
+    position: relative;
+   }
+
+   input[type="email"] {
+    width: 25rem;
+    margin: 0 1rem 0;
+    padding: 1rem 2rem;
+
+   }
+
+   input[type="email"]::placeholder {
+    font-size: 1rem;
+   }
+
+   button {
+    margin: 0;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+   }
+
+   .error-message {
+    position: absolute;
+    top: 5rem;
+    left: 3.5rem;
+   }
+
+   .illustration {
+    width: 70%;
+    margin-bottom: 4rem;
+   }
+}
+
+
